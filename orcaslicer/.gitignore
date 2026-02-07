@@ -1,0 +1,7 @@
+# Exclude system and cache directories
+system/
+cache/
+log/
+
+# Exclude user backups
+user_backup*
