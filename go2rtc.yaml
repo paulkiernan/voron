@@ -1,0 +1,14 @@
+streams:
+  angrycam: 
+    - ffmpeg:device?video=/dev/v4l/by-id/usb-Vimicro_Corp._HBVCAM_FHD_CAMERA-video-index0&input_format=mjpeg&video_size=1920x1080#video=h264#hardware
+
+api:
+  listen: ":1984"
+  origin: "*"
+
+webrtc:
+  listen: ":8555"
+  candidates:
+    - 100.96.110.61:8555  # Your Tailscale IP
+    - voron.border-enigmatic.ts.net:8555
+    - stun:8555           # Helps bridge the connection
