@@ -1,10 +1,9 @@
 {
 	"00.00.00.00": {
-		"display_name": "Bambu Lab X1E",
+		"display_name": "Bambu Lab P2S",
 		"print": {
 			"ipcam": {
 				"resolution_supported": [
-					"720p",
 					"1080p"
 				],
 				"virtual_camera": "enabled",
@@ -12,18 +11,23 @@
 					"remote": "tutk"
 				},
 				"file": {
+					"local": "local",
 					"remote": "tutk",
 					"model_download": "enabled"
 				}
 			},
 			"nozzle_temp_range": [
 				0,
-				320
+				300
 			],
 			"nozzle_replace_wiki": {
-				"zh": "https://wiki.bambulab.com/zh/x1/maintenance/replace-hotend",
-				"en": "https://wiki.bambulab.com/en/x1/maintenance/replace-hotend"
+				"zh": "https://wiki.bambulab.com/zh/h2/maintenance/replace-hotend",
+				"en": "https://wiki.bambulab.com/en/h2/maintenance/replace-hotend"
 			},
+			"bed_temp_range": [
+				0,
+				110
+			],
 			"support_motor_noise_cali": false,
 			"support_tunnel_mqtt": true,
 			"support_mqtt_alive": true,
@@ -34,7 +38,7 @@
 			"support_prompt_sound": false,
 			"support_ams_humidity": true,
 			"support_auto_recovery_step_loss": true,
-			"support_bed_leveling": 1,
+			"support_bed_leveling": 2,
 			"support_update_remain": true,
 			"support_timelapse": true,
 			"support_filament_backup": true,
@@ -44,43 +48,47 @@
 			"support_print_all": true,
 			"support_print_without_sd": true,
 			"support_flow_calibration": true,
-			"support_auto_flow_calibration": false,
+			"support_auto_flow_calibration": true,
 			"support_build_plate_marker_detect": true,
-			"support_build_plate_marker_detect_type": 1,
-			"support_lidar_calibration": true,
+			"support_build_plate_marker_detect_type": 2,
+			"support_lidar_calibration": false,
+			"support_nozzle_offset_calibration": false,
+			"support_high_tempbed_calibration": true,
+			"support_clump_position_calibration": true,
 			"support_ai_monitoring": true,
-			"support_first_layer_inspect": true,
+			"support_first_layer_inspect": false,
+			"support_save_remote_print_file_to_storage": true,
 			"support_chamber": true,
-			"support_chamber_temp_edit": true,
-			"support_chamber_temp_edit_range": [
-				0,
-				60
-			],
+			"support_chamber_temp_edit": false,
 			"support_extrusion_cali": false,
 			"support_user_preset": false,
-			"bed_temperature_limit": 110,
-			"nozzle_max_temperature": 320,
 			"support_ams_ext_mix_print": true
 		},
-		"model_id": "C13",
-		"support_wrapping_detection": false,
-		"auto_pa_cali_thumbnail_image": "fd_calibration_auto",
-		"compatible_machine": [
-			"BL-P001",
-			"BL-P002",
-			"C11",
-			"C12"
+		"fan": {
+			"0": {
+				"description": "",
+				"2": "Right(Aux)",
+				"10": "Left(Aux)"
+			},
+			"1": {
+				"2": "Right(Filter)",
+				"10": "Left(Aux)"
+			},
+			"special_cooling_text": "Cooling mode is suitable for printing PLA/PETG/TPU materials."
+		},
+		"model_id": "N7",
+		"subseries": [
+			"N7-V2"
 		],
-		"auto_cali_not_support_filaments": [
-			"GFU03",
-			"GFU04"
-		],
-		"printer_type": "C13",
-		"printer_thumbnail_image": "printer_thumbnail_x1e",
+		"auto_pa_cali_thumbnail_image": "fd_calibration_auto_n7",
+		"support_wrapping_detection": true,
+		"compatible_machine": [],
+		"printer_type": "N7",
+		"printer_thumbnail_image": "printer_thumbnail_N7",
 		"printer_connect_help_image": "input_access_code_x1",
 		"printer_use_ams_image": "ams_icon",
 		"printer_ext_image": [
-			"ext_image_xp"
+			"ext_image_n7"
 		],
 		"use_ams_type": "generic",
 		"printer_arch": "core_xy",
@@ -88,9 +96,6 @@
 		"has_cali_line": true,
 		"printer_is_enclosed": true,
 		"enable_set_nozzle_info": false,
-		"support_safety_options": false
-	},
-	"01.05.06.06": {
-		"rv2166": "00.00.21.20"
+		"support_safety_options": true
 	}
 }

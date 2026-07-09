@@ -1,16 +1,15 @@
 {
-    "compatible_printers": [
-        "Voron 2.4 350 0.4 nozzle"
-    ],
-    "filament_max_volumetric_speed": [
-        "34"
-    ],
-    "filament_settings_id": [
-        "Generic PLA - High Flow"
-    ],
-    "from": "User",
-    "inherits": "Generic PLA @System",
-    "is_custom_defined": "0",
-    "name": "Generic PLA - High Flow",
-    "version": "2.3.1.10"
+	"filament_extruder_variant": [
+		"Direct Drive Standard"
+	],
+	"filament_max_volumetric_speed": [
+		"34"
+	],
+	"filament_settings_id": [
+		"Generic PLA - High Flow"
+	],
+	"from": "User",
+	"inherits": "Generic PLA @System",
+	"name": "Generic PLA - High Flow",
+	"version": "2.3.1.10"
 }

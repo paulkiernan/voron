@@ -1,0 +1,16 @@
+{
+	"enable_support": "1",
+	"from": "User",
+	"inherits": "0.10mm Standard 0.2 nozzle @Voron",
+	"name": "0.10mm Standard 0.2 nozzle @Voron - Copy",
+	"print_extruder_id": [
+		"1"
+	],
+	"print_extruder_variant": [
+		"Direct Drive Standard"
+	],
+	"print_settings_id": "0.10mm Standard 0.2 nozzle @Voron - Copy",
+	"support_on_build_plate_only": "1",
+	"support_type": "tree(auto)",
+	"version": "2.4.0.1"
+}

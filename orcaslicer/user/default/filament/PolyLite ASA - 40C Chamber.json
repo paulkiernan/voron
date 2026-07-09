@@ -1,0 +1,27 @@
+{
+    "chamber_temperature": [
+        "40"
+    ],
+    "filament_extruder_variant": [
+        "Direct Drive Standard"
+    ],
+    "filament_max_volumetric_speed": [
+        "34"
+    ],
+    "filament_settings_id": [
+        "PolyLite ASA - 40C Chamber"
+    ],
+    "filament_shrink": [
+        "99.58%"
+    ],
+    "from": "User",
+    "inherits": "PolyLite ASA @System",
+    "name": "PolyLite ASA - 40C Chamber",
+    "nozzle_temperature": [
+        "250"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "250"
+    ],
+    "version": "2.3.1.10"
+}

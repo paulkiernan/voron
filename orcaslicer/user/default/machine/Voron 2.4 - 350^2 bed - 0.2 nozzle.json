@@ -1,6 +1,6 @@
 {
     "from": "User",
-    "inherits": "Voron 2.4 350 0.4 nozzle",
+    "inherits": "Voron 2.4 350 0.2 nozzle",
     "machine_max_jerk_x": [
         "20",
         "12"
@@ -10,21 +10,21 @@
         "12"
     ],
     "machine_max_junction_deviation": [
-        "1"
+        "0.01"
     ],
     "machine_start_gcode": "PRINT_START BED=[bed_temperature_initial_layer_single] HOTEND=[nozzle_temperature_initial_layer] CHAMBER=[chamber_temperature] PRINT_MIN={first_layer_print_min[0]},{first_layer_print_min[1]} PRINT_MAX={first_layer_print_max[0]},{first_layer_print_max[1]}",
     "min_layer_height": [
         "0.05"
     ],
-    "name": "Voron 2.4  - 350^2 bed  - 0.4 nozzle",
-    "print_host": "http://voron.border-enigmatic.ts.net",
+    "name": "Voron 2.4 - 350^2 bed - 0.2 nozzle",
+    "print_host": "http://voron",
     "printer_extruder_id": [
         "1"
     ],
     "printer_extruder_variant": [
         "Direct Drive Standard"
     ],
-    "printer_settings_id": "Voron 2.4  - 350^2 bed  - 0.4 nozzle",
+    "printer_settings_id": "Voron 2.4 - 350^2 bed - 0.2 nozzle",
     "thumbnails": "48x48/PNG, 300x300/PNG",
     "version": "2.3.1.10"
 }
