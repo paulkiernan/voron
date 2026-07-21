@@ -11,5 +11,11 @@
 	"from": "User",
 	"inherits": "Generic PLA @System",
 	"name": "Generic PLA - High Flow",
+	"nozzle_temperature": [
+		"200"
+	],
+	"nozzle_temperature_initial_layer": [
+		"205"
+	],
 	"version": "2.3.1.10"
 }
