@@ -1,4 +1,5 @@
 {
+    "change_filament_gcode": "M600",
     "from": "User",
     "inherits": "Voron 2.4 350 0.4 nozzle",
     "machine_max_jerk_x": [
@@ -12,6 +13,7 @@
     "machine_max_junction_deviation": [
         "1"
     ],
+    "machine_pause_gcode": "PAUSE",
     "machine_start_gcode": "PRINT_START BED=[bed_temperature_initial_layer_single] HOTEND=[nozzle_temperature_initial_layer] CHAMBER=[chamber_temperature] PRINT_MIN={first_layer_print_min[0]},{first_layer_print_min[1]} PRINT_MAX={first_layer_print_max[0]},{first_layer_print_max[1]}",
     "min_layer_height": [
         "0.05"
